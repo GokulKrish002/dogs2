@@ -456,3 +456,7 @@
 .blog-item a:hover i::after {
     width: 50px;
 }
+
+.Product_img{
+    margin-left:200px;
+}

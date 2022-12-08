@@ -39,17 +39,3 @@ namespace dogs2
         }
     }
 }
-
-/*SqlCommand cmd = new SqlCommand("select * from saravanan where email=@email and password=@password", con);
-            cmd.Parameters.AddWithValue("@email", TextBox1.Text);
-            cmd.Parameters.AddWithValue("@password", TextBox2.Text);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
-            da.Fill(ds, "saravanan");
-            if (ds.Tables["saravanan"].Rows.Count == 0) { 
-            Response.Write("Invalid user");
-                TextBox1.Text = "Invalid user";
-            }
-            else{
-                Response.Redirect("index.aspx");
-            }*/

@@ -28,6 +28,30 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            border-style: solid;
+            border-width: 1px;
+        }
+        .auto-style2 {
+            width: 537px;
+        }
+        .auto-style3 {
+            width: 852px;
+        }
+        .auto-style4 {
+            width: 474px;
+        }
+        .auto-style5 {
+            width: 474px;
+            height: 30px;
+        }
+        .auto-style6 {
+            width: 537px;
+            height: 30px;
+        }
+    </style>
 </head>
 
 <body>
@@ -642,12 +666,48 @@
     </div>
     <!-- Blog End --> 
 
-    <form method="post" runat="server">
-    <asp:GridView ID="GridView1" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px">
+    <form method="post" runat="server" align="center">
+        <asp:Button ID="Button1" runat="server" Text="refresh" OnClick="Button1_Click" />
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style4">User Name</td>
+                <td class="auto-style2">
+                    <asp:TextBox ID="TextBox1" runat="server" Width="335px"></asp:TextBox>
+                </td>
+                <td class="auto-style3" rowspan="5">
+    <asp:GridView ID="GridView1" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" CellPadding="5" Width="705px" Align="Center" >
         <RowStyle BackColor="White" BorderColor="Black" BorderWidth="1px" />
         <SelectedRowStyle BackColor="Black" BorderColor="Black" BorderWidth="1px" ForeColor="Black" />
         </asp:GridView>
-        <asp:Button ID="Button1" runat="server" Text="refresh" OnClick="Button1_Click" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4">email</td>
+                <td class="auto-style2">
+                    <asp:TextBox ID="TextBox2" runat="server" Width="335px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style5">age</td>
+                <td class="auto-style6">
+                    <asp:TextBox ID="TextBox3" runat="server" Width="335px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4">password</td>
+                <td class="auto-style2">
+                    <asp:TextBox ID="TextBox4" runat="server" Width="331px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4">&nbsp;</td>
+                <td class="auto-style2">
+                    <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="insert" Width="157px" />
+                    <asp:Button ID="Button3" runat="server" Text="update" Width="151px" />
+                    <asp:Button ID="Button4" runat="server" Text="delete" Width="166px" />
+                </td>
+            </tr>
+        </table>
     </form>
     
 

@@ -297,6 +297,8 @@
     <!-- Pricing Plan End -->
     
 
+
+
     <!-- Footer Start -->
     <div class="container-fluid bg-light mt-5 py-5">
         <div class="container pt-5">
@@ -332,12 +334,10 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Newsletter</h5>
-                    <form action="">
                         <div class="input-group">
                             <input type="text" class="form-control p-3" placeholder="Your Email">
                             <button class="btn btn-primary">Sign Up</button>
                         </div>
-                    </form>
                     <h6 class="text-uppercase mt-4 mb-3">Follow Us</h6>
                     <div class="d-flex">
                         <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-twitter"></i></a>
